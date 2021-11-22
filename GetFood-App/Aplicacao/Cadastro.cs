@@ -25,12 +25,19 @@ namespace GetFood_App.Aplicacao
             if (controle.tem)
             {
                 MessageBox.Show(menssagem, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MenuPrincipal menuPrincipal = new MenuPrincipal();
+                menuPrincipal.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show(controle.menssagem);
             }
+        }
+
+        private void btnCadSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -23,6 +23,7 @@ namespace GetFood_App
         {
             Cadastro cad = new Cadastro();
             cad.Show();
+            this.Hide();
         }
 
         private void btnLogSair_Click(object sender, EventArgs e)
@@ -51,6 +52,11 @@ namespace GetFood_App
             {
                 MessageBox.Show(controle.menssagem);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

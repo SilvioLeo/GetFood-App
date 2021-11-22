@@ -29,6 +29,7 @@ namespace GetFood_App.Aplicacao
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCadEmail = new System.Windows.Forms.TextBox();
@@ -36,71 +37,130 @@ namespace GetFood_App.Aplicacao
             this.txtCadSenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textCadConfSenha = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCadSair = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(241, 182);
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastrar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(334, 249);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(144, 41);
             this.btnCadastrar.TabIndex = 0;
             this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 81);
+            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(310, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Email";
+            this.label2.Text = "Email:";
             // 
             // txtCadEmail
             // 
-            this.txtCadEmail.Location = new System.Drawing.Point(241, 78);
+            this.txtCadEmail.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadEmail.Location = new System.Drawing.Point(313, 129);
             this.txtCadEmail.Name = "txtCadEmail";
-            this.txtCadEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtCadEmail.Size = new System.Drawing.Size(184, 23);
             this.txtCadEmail.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(159, 107);
+            this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(310, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Senha";
+            this.label3.Text = "Senha:";
             // 
             // txtCadSenha
             // 
-            this.txtCadSenha.Location = new System.Drawing.Point(241, 104);
+            this.txtCadSenha.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadSenha.Location = new System.Drawing.Point(313, 171);
             this.txtCadSenha.Name = "txtCadSenha";
-            this.txtCadSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtCadSenha.Size = new System.Drawing.Size(184, 23);
             this.txtCadSenha.TabIndex = 2;
+            this.txtCadSenha.UseSystemPasswordChar = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 150);
+            this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(310, 194);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.Size = new System.Drawing.Size(133, 16);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Confirmar senha";
+            this.label4.Text = "Confirmar senha:";
             // 
             // textCadConfSenha
             // 
-            this.textCadConfSenha.Location = new System.Drawing.Point(241, 143);
+            this.textCadConfSenha.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCadConfSenha.Location = new System.Drawing.Point(313, 212);
             this.textCadConfSenha.Name = "textCadConfSenha";
-            this.textCadConfSenha.Size = new System.Drawing.Size(100, 20);
+            this.textCadConfSenha.Size = new System.Drawing.Size(184, 23);
             this.textCadConfSenha.TabIndex = 2;
+            this.textCadConfSenha.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(220, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 32);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "CADASTRO";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(46, 95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(183, 195);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCadSair
+            // 
+            this.btnCadSair.BackColor = System.Drawing.Color.Red;
+            this.btnCadSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadSair.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadSair.ForeColor = System.Drawing.Color.White;
+            this.btnCadSair.Location = new System.Drawing.Point(550, 12);
+            this.btnCadSair.Name = "btnCadSair";
+            this.btnCadSair.Size = new System.Drawing.Size(37, 29);
+            this.btnCadSair.TabIndex = 5;
+            this.btnCadSair.Text = "X";
+            this.btnCadSair.UseVisualStyleBackColor = false;
+            this.btnCadSair.Click += new System.EventHandler(this.btnCadSair_Click);
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(599, 352);
+            this.Controls.Add(this.btnCadSair);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textCadConfSenha);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCadSenha);
@@ -108,8 +168,11 @@ namespace GetFood_App.Aplicacao
             this.Controls.Add(this.txtCadEmail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCadastrar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +187,8 @@ namespace GetFood_App.Aplicacao
         private System.Windows.Forms.TextBox txtCadSenha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textCadConfSenha;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCadSair;
     }
 }
