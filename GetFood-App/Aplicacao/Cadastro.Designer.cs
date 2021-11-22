@@ -40,6 +40,7 @@ namespace GetFood_App.Aplicacao
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCadSair = new System.Windows.Forms.Button();
+            this.btnCadVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,9 +51,9 @@ namespace GetFood_App.Aplicacao
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(334, 249);
+            this.btnCadastrar.Location = new System.Drawing.Point(334, 257);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(144, 41);
+            this.btnCadastrar.Size = new System.Drawing.Size(145, 33);
             this.btnCadastrar.TabIndex = 0;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -152,12 +153,27 @@ namespace GetFood_App.Aplicacao
             this.btnCadSair.UseVisualStyleBackColor = false;
             this.btnCadSair.Click += new System.EventHandler(this.btnCadSair_Click);
             // 
+            // btnCadVoltar
+            // 
+            this.btnCadVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnCadVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadVoltar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnCadVoltar.Location = new System.Drawing.Point(512, 317);
+            this.btnCadVoltar.Name = "btnCadVoltar";
+            this.btnCadVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadVoltar.TabIndex = 6;
+            this.btnCadVoltar.Text = "Voltar";
+            this.btnCadVoltar.UseVisualStyleBackColor = false;
+            this.btnCadVoltar.Click += new System.EventHandler(this.btnCadVoltar_Click);
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(599, 352);
+            this.Controls.Add(this.btnCadVoltar);
             this.Controls.Add(this.btnCadSair);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -190,5 +206,6 @@ namespace GetFood_App.Aplicacao
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCadSair;
+        private System.Windows.Forms.Button btnCadVoltar;
     }
 }

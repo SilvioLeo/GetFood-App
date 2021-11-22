@@ -86,16 +86,18 @@ namespace GetFood_App
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(316, 143);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(199, 20);
+            this.txtEmail.Size = new System.Drawing.Size(199, 23);
             this.txtEmail.TabIndex = 1;
             // 
             // txtSenha
             // 
+            this.txtSenha.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(316, 192);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(199, 20);
+            this.txtSenha.Size = new System.Drawing.Size(199, 23);
             this.txtSenha.TabIndex = 1;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
@@ -106,9 +108,9 @@ namespace GetFood_App
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(313, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 16);
+            this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Email";
+            this.label1.Text = "Email:";
             // 
             // label2
             // 
@@ -117,9 +119,9 @@ namespace GetFood_App
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(313, 173);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Senha";
+            this.label2.Text = "Senha:";
             // 
             // pictureBox1
             // 
