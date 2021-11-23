@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace GetFood_App.DAL
         SqlCommand cmd = new SqlCommand();
         Conexao con = new Conexao();
         SqlDataReader dr;
+        DataTable dt = new DataTable();
 
 
 
@@ -78,5 +80,33 @@ namespace GetFood_App.DAL
             
             return menssagem;
         }
+
+        public string CadastrarAlimentos(string id, string alimento, string quantidade, string dataFabricacao, string dataVencimento)
+        {
+            tem = false;
+            cmd.CommandText = "INSERT INTO tabela_Alimentos VALUES(@id,@alin,@quant,@dateF,@dateV)";
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@alin", alimento);
+            cmd.Parameters.AddWithValue("@quant", quantidade);
+            cmd.Parameters.AddWithValue("@dateF", dataFabricacao);
+            cmd.Parameters.AddWithValue("@dateV", dataVencimento);
+
+            try
+            {
+                cmd.Connection = con.Conecta();
+                cmd.ExecuteNonQuery();
+                con.Desconectar();
+                tem = true;
+
+
+            }
+            catch (SqlException)
+            {
+                this.menssagem = "Erro no banco de dados";
+                
+            }
+            return menssagem;
+        }
+
     }
 }

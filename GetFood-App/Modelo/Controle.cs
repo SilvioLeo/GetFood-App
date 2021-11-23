@@ -33,5 +33,17 @@ namespace GetFood_App.Modelo
             }
             return menssagem;
         }
+
+        public string CadastrarAlimentos(string id, string alimento, string quantidade, string dataFabricacao, string dataVencimento)
+        {
+
+            LoginDaoComandos loginDao = new LoginDaoComandos();
+            this.menssagem = loginDao.CadastrarAlimentos(id, alimento, quantidade, dataFabricacao, dataVencimento);
+            if (loginDao.tem)
+            {
+                this.tem = true;
+            }
+            return menssagem;
+        }
     }
 }
