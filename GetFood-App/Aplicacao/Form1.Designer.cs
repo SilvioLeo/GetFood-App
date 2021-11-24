@@ -51,7 +51,7 @@ namespace GetFood_App
             this.btnLogSair.Location = new System.Drawing.Point(571, 12);
             this.btnLogSair.Name = "btnLogSair";
             this.btnLogSair.Size = new System.Drawing.Size(32, 30);
-            this.btnLogSair.TabIndex = 0;
+            this.btnLogSair.TabIndex = 4;
             this.btnLogSair.Text = "X";
             this.btnLogSair.UseVisualStyleBackColor = false;
             this.btnLogSair.Click += new System.EventHandler(this.btnLogSair_Click);
@@ -65,7 +65,7 @@ namespace GetFood_App
             this.btnLogCadastreSe.Location = new System.Drawing.Point(339, 273);
             this.btnLogCadastreSe.Name = "btnLogCadastreSe";
             this.btnLogCadastreSe.Size = new System.Drawing.Size(153, 34);
-            this.btnLogCadastreSe.TabIndex = 0;
+            this.btnLogCadastreSe.TabIndex = 3;
             this.btnLogCadastreSe.Text = "Cadastre-se";
             this.btnLogCadastreSe.UseVisualStyleBackColor = false;
             this.btnLogCadastreSe.Click += new System.EventHandler(this.btnLogCadastreSe_Click);
@@ -79,7 +79,7 @@ namespace GetFood_App
             this.btnLogEntrar.Location = new System.Drawing.Point(339, 231);
             this.btnLogEntrar.Name = "btnLogEntrar";
             this.btnLogEntrar.Size = new System.Drawing.Size(153, 36);
-            this.btnLogEntrar.TabIndex = 0;
+            this.btnLogEntrar.TabIndex = 2;
             this.btnLogEntrar.Text = "Entrar";
             this.btnLogEntrar.UseVisualStyleBackColor = false;
             this.btnLogEntrar.Click += new System.EventHandler(this.btnLogEntrar_Click);
@@ -90,7 +90,7 @@ namespace GetFood_App
             this.txtEmail.Location = new System.Drawing.Point(316, 143);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(199, 23);
-            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TabIndex = 0;
             // 
             // txtSenha
             // 
@@ -141,7 +141,7 @@ namespace GetFood_App
             this.label3.Location = new System.Drawing.Point(257, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 32);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 5;
             this.label3.Text = "LOGIN";
             // 
             // Form1

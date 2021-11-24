@@ -42,6 +42,7 @@ namespace GetFood_App
                     MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MenuPrincipal menu = new MenuPrincipal();
                     menu.Show();
+                    
                 }
                 else
                 {

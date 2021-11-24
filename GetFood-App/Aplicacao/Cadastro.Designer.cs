@@ -54,7 +54,7 @@ namespace GetFood_App.Aplicacao
             this.btnCadastrar.Location = new System.Drawing.Point(334, 257);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(145, 33);
-            this.btnCadastrar.TabIndex = 0;
+            this.btnCadastrar.TabIndex = 3;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -76,7 +76,7 @@ namespace GetFood_App.Aplicacao
             this.txtCadEmail.Location = new System.Drawing.Point(313, 129);
             this.txtCadEmail.Name = "txtCadEmail";
             this.txtCadEmail.Size = new System.Drawing.Size(184, 23);
-            this.txtCadEmail.TabIndex = 2;
+            this.txtCadEmail.TabIndex = 0;
             // 
             // label3
             // 
@@ -95,7 +95,7 @@ namespace GetFood_App.Aplicacao
             this.txtCadSenha.Location = new System.Drawing.Point(313, 171);
             this.txtCadSenha.Name = "txtCadSenha";
             this.txtCadSenha.Size = new System.Drawing.Size(184, 23);
-            this.txtCadSenha.TabIndex = 2;
+            this.txtCadSenha.TabIndex = 1;
             this.txtCadSenha.UseSystemPasswordChar = true;
             // 
             // label4
@@ -162,7 +162,7 @@ namespace GetFood_App.Aplicacao
             this.btnCadVoltar.Location = new System.Drawing.Point(512, 317);
             this.btnCadVoltar.Name = "btnCadVoltar";
             this.btnCadVoltar.Size = new System.Drawing.Size(75, 23);
-            this.btnCadVoltar.TabIndex = 6;
+            this.btnCadVoltar.TabIndex = 4;
             this.btnCadVoltar.Text = "Voltar";
             this.btnCadVoltar.UseVisualStyleBackColor = false;
             this.btnCadVoltar.Click += new System.EventHandler(this.btnCadVoltar_Click);

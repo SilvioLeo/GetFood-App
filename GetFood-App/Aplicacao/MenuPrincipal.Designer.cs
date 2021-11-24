@@ -45,6 +45,11 @@ namespace GetFood_App.Aplicacao
             this.btnMenuConsultar = new System.Windows.Forms.Button();
             this.btnMenuAtualizar = new System.Windows.Forms.Button();
             this.btnMenuExcluir = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ALIMENTOS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUANTIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DATF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DTV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenuAlimentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +68,7 @@ namespace GetFood_App.Aplicacao
             this.btnMenuCadastrar.Location = new System.Drawing.Point(62, 237);
             this.btnMenuCadastrar.Name = "btnMenuCadastrar";
             this.btnMenuCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuCadastrar.TabIndex = 1;
+            this.btnMenuCadastrar.TabIndex = 5;
             this.btnMenuCadastrar.Text = "Cadastrar";
             this.btnMenuCadastrar.UseVisualStyleBackColor = true;
             this.btnMenuCadastrar.Click += new System.EventHandler(this.btnMenuCadastrar_Click);
@@ -82,21 +87,21 @@ namespace GetFood_App.Aplicacao
             this.txtId.Location = new System.Drawing.Point(62, 33);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(200, 20);
-            this.txtId.TabIndex = 3;
+            this.txtId.TabIndex = 0;
             // 
             // txtAlimentos
             // 
             this.txtAlimentos.Location = new System.Drawing.Point(62, 72);
             this.txtAlimentos.Name = "txtAlimentos";
             this.txtAlimentos.Size = new System.Drawing.Size(200, 20);
-            this.txtAlimentos.TabIndex = 3;
+            this.txtAlimentos.TabIndex = 1;
             // 
             // txtQuantidade
             // 
             this.txtQuantidade.Location = new System.Drawing.Point(62, 111);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(200, 20);
-            this.txtQuantidade.TabIndex = 3;
+            this.txtQuantidade.TabIndex = 2;
             // 
             // dtpFabricacao
             // 
@@ -104,7 +109,7 @@ namespace GetFood_App.Aplicacao
             this.dtpFabricacao.Location = new System.Drawing.Point(62, 155);
             this.dtpFabricacao.Name = "dtpFabricacao";
             this.dtpFabricacao.Size = new System.Drawing.Size(200, 20);
-            this.dtpFabricacao.TabIndex = 4;
+            this.dtpFabricacao.TabIndex = 3;
             // 
             // label3
             // 
@@ -148,32 +153,45 @@ namespace GetFood_App.Aplicacao
             this.dtpVencimento.Location = new System.Drawing.Point(62, 194);
             this.dtpVencimento.Name = "dtpVencimento";
             this.dtpVencimento.Size = new System.Drawing.Size(200, 20);
-            this.dtpVencimento.TabIndex = 9;
+            this.dtpVencimento.TabIndex = 4;
             // 
             // dgvMenuAlimentos
             // 
+            this.dgvMenuAlimentos.AllowUserToAddRows = false;
+            this.dgvMenuAlimentos.AllowUserToDeleteRows = false;
+            this.dgvMenuAlimentos.AllowUserToResizeColumns = false;
+            this.dgvMenuAlimentos.AllowUserToResizeRows = false;
             this.dgvMenuAlimentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMenuAlimentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.ALIMENTOS,
+            this.QUANTIDADE,
+            this.DATF,
+            this.DTV});
             this.dgvMenuAlimentos.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvMenuAlimentos.Location = new System.Drawing.Point(0, 295);
+            this.dgvMenuAlimentos.MultiSelect = false;
             this.dgvMenuAlimentos.Name = "dgvMenuAlimentos";
             this.dgvMenuAlimentos.Size = new System.Drawing.Size(800, 155);
             this.dgvMenuAlimentos.TabIndex = 10;
+            this.dgvMenuAlimentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMenuAlimentos_CellClick);
             // 
             // btnMenuConsultar
             // 
             this.btnMenuConsultar.Location = new System.Drawing.Point(165, 237);
             this.btnMenuConsultar.Name = "btnMenuConsultar";
             this.btnMenuConsultar.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuConsultar.TabIndex = 11;
+            this.btnMenuConsultar.TabIndex = 6;
             this.btnMenuConsultar.Text = "Consultar";
             this.btnMenuConsultar.UseVisualStyleBackColor = true;
+            this.btnMenuConsultar.Click += new System.EventHandler(this.btnMenuConsultar_Click);
             // 
             // btnMenuAtualizar
             // 
             this.btnMenuAtualizar.Location = new System.Drawing.Point(279, 237);
             this.btnMenuAtualizar.Name = "btnMenuAtualizar";
             this.btnMenuAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuAtualizar.TabIndex = 12;
+            this.btnMenuAtualizar.TabIndex = 7;
             this.btnMenuAtualizar.Text = "Atualizar";
             this.btnMenuAtualizar.UseVisualStyleBackColor = true;
             // 
@@ -182,9 +200,44 @@ namespace GetFood_App.Aplicacao
             this.btnMenuExcluir.Location = new System.Drawing.Point(387, 237);
             this.btnMenuExcluir.Name = "btnMenuExcluir";
             this.btnMenuExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuExcluir.TabIndex = 13;
+            this.btnMenuExcluir.TabIndex = 8;
             this.btnMenuExcluir.Text = "Excluir";
             this.btnMenuExcluir.UseVisualStyleBackColor = true;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "id";
+            this.ID.HeaderText = "Id";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // ALIMENTOS
+            // 
+            this.ALIMENTOS.DataPropertyName = "alimento";
+            this.ALIMENTOS.HeaderText = "Alimento";
+            this.ALIMENTOS.Name = "ALIMENTOS";
+            this.ALIMENTOS.ReadOnly = true;
+            // 
+            // QUANTIDADE
+            // 
+            this.QUANTIDADE.DataPropertyName = "quantidade";
+            this.QUANTIDADE.HeaderText = "Quantidade";
+            this.QUANTIDADE.Name = "QUANTIDADE";
+            this.QUANTIDADE.ReadOnly = true;
+            // 
+            // DATF
+            // 
+            this.DATF.DataPropertyName = "dataFabricacao";
+            this.DATF.HeaderText = "Data de fabricação";
+            this.DATF.Name = "DATF";
+            this.DATF.ReadOnly = true;
+            // 
+            // DTV
+            // 
+            this.DTV.DataPropertyName = "dataVencimento";
+            this.DTV.HeaderText = "Data de vencimento";
+            this.DTV.Name = "DTV";
+            this.DTV.ReadOnly = true;
             // 
             // MenuPrincipal
             // 
@@ -234,5 +287,10 @@ namespace GetFood_App.Aplicacao
         private System.Windows.Forms.Button btnMenuConsultar;
         private System.Windows.Forms.Button btnMenuAtualizar;
         private System.Windows.Forms.Button btnMenuExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ALIMENTOS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUANTIDADE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DATF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DTV;
     }
 }
